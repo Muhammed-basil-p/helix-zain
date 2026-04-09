@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5SS1Y01WS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-C5SS1Y01WS');
+    </script>
+    <title>Start Your Project - Helix-Zain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Premium Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="HELIX-ZAIN — Home">
+                <img src="images/helix-zain-logo-navbar.png" alt="" width="260" height="80" decoding="async" aria-hidden="true">
+                <span class="nav-logo-text">Helix-Zain</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="start-project-hero">
+        <div class="start-project-hero-background"></div>
+        <div class="particles-bg" id="particles"></div>
+        <div class="scanlines"></div>
+        <div class="container">
+            <div class="start-project-hero-content reveal">
+                <h1>Start Your Project</h1>
+                <p class="start-project-hero-subtitle">Tell us about your vision and we'll help you build it with
+                    precision, performance and security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Type Selection Section -->
+    <section class="start-project-section" id="projectTypeSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">What type of project are you starting?</h2>
+            <div class="project-type-grid reveal">
+                <div class="project-type-card" data-type="mobile-app">
+                    <img src="C:/Users/AIM/Downloads/6.png" alt="Mobile App Development" class="project-type-icon">
+                    <h3>Mobile App Development</h3>
+                </div>
+                <div class="project-type-card" data-type="website">
+                    <img src="assets/0.png" alt="Website Development" class="project-type-icon">
+                    <h3>Website / Web App Development</h3>
+                </div>
+                <div class="project-type-card" data-type="cybersecurity">
+                    <img src="assets/122.png" alt="Cybersecurity" class="project-type-icon">
+                    <h3>Cybersecurity / Penetration Testing</h3>
+                </div>
+                <div class="project-type-card" data-type="automation-ai">
+                    <img src="assets/9.png" alt="Automation & AI" class="project-type-icon">
+                    <h3>Automation & AI Integrations</h3>
+                </div>
+                <div class="project-type-card" data-type="other">
+                    <h3>Other</h3>
+                </div>
+            </div>
+            <div class="other-project-input-wrapper" id="otherProjectInput" style="display: none;">
+                <input type="text" id="otherProjectType" class="other-project-input"
+                    placeholder="Please specify your project type...">
+            </div>
+            <input type="hidden" id="selectedProjectType" name="projectType" required>
+        </div>
+    </section>
+
+    <!-- Project Goals Section -->
+    <section class="start-project-section" id="projectGoalsSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">What are your main goals?</h2>
+            <div class="project-goals-grid reveal">
+                <label class="project-goal-checkbox">
+                    <input type="checkbox" name="goals" value="launch-product">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-label">Launch a new product</span>
+                </label>
+                <label class="project-goal-checkbox">
+                    <input type="checkbox" name="goals" value="improve-platform">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-label">Improve an existing platform</span>
+                </label>
+                <label class="project-goal-checkbox">
+                    <input type="checkbox" name="goals" value="automate-workflows">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-label">Automate workflows</span>
+                </label>
+                <label class="project-goal-checkbox">
+                    <input type="checkbox" name="goals" value="reduce-costs">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-label">Reduce development costs</span>
+                </label>
+                <label class="project-goal-checkbox">
+                    <input type="checkbox" name="goals" value="other-goal">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-label">Other</span>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Section -->
+    <section class="start-project-section" id="budgetSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">What is your project budget?</h2>
+            <div class="budget-options-grid reveal">
+                <label class="budget-option-card">
+                    <input type="radio" name="budget" value="30k-75k" required>
+                    <div class="budget-card-content">
+                        <span class="budget-range">₹30,000 – ₹75,000</span>
+                    </div>
+                </label>
+                <label class="budget-option-card">
+                    <input type="radio" name="budget" value="75k-150k">
+                    <div class="budget-card-content">
+                        <span class="budget-range">₹75,000 – ₹1,50,000</span>
+                    </div>
+                </label>
+                <label class="budget-option-card">
+                    <input type="radio" name="budget" value="150k-300k">
+                    <div class="budget-card-content">
+                        <span class="budget-range">₹1,50,000 – ₹3,00,000</span>
+                    </div>
+                </label>
+                <label class="budget-option-card">
+                    <input type="radio" name="budget" value="300k-plus">
+                    <div class="budget-card-content">
+                        <span class="budget-range">₹3,00,000+</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="start-project-section" id="timelineSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">When do you want to start?</h2>
+            <div class="timeline-options-grid reveal">
+                <label class="timeline-option-card">
+                    <input type="radio" name="timeline" value="immediately" required>
+                    <div class="timeline-card-content">
+                        <span class="timeline-option">Immediately</span>
+                    </div>
+                </label>
+                <label class="timeline-option-card">
+                    <input type="radio" name="timeline" value="1-3-weeks">
+                    <div class="timeline-card-content">
+                        <span class="timeline-option">1–3 weeks</span>
+                    </div>
+                </label>
+                <label class="timeline-option-card">
+                    <input type="radio" name="timeline" value="1-2-months">
+                    <div class="timeline-card-content">
+                        <span class="timeline-option">1–2 months</span>
+                    </div>
+                </label>
+                <label class="timeline-option-card">
+                    <input type="radio" name="timeline" value="flexible">
+                    <div class="timeline-card-content">
+                        <span class="timeline-option">Flexible / Just exploring</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements & File Upload Section -->
+    <section class="start-project-section" id="requirementsSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">Project Details</h2>
+            <div class="requirements-form-container reveal">
+                <div class="form-group">
+                    <label for="projectName">Project Name <span class="required">*</span></label>
+                    <input type="text" id="projectName" name="projectName" required
+                        placeholder="Enter your project name">
+                </div>
+                <div class="form-group">
+                    <label for="projectDescription">Project Description <span class="required">*</span></label>
+                    <textarea id="projectDescription" name="projectDescription" rows="6" required
+                        placeholder="Describe your project vision, goals, and any specific requirements..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fileUpload">Upload Files (Optional)</label>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="fileUpload" name="files" multiple
+                            accept=".pdf,.jpg,.jpeg,.png,.fig,.xd,.sketch" style="display: none;">
+                        <button type="button" class="file-upload-button"
+                            onclick="document.getElementById('fileUpload').click()">
+                            <span class="file-upload-icon">📎</span>
+                            <span>Upload Figma / Screenshots / PDF</span>
+                        </button>
+                        <div class="file-upload-list" id="fileUploadList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Details Form -->
+    <section class="start-project-section" id="clientDetailsSection">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">Your Contact Information</h2>
+            <div class="client-details-form-container reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="clientName">Name <span class="required">*</span></label>
+                        <input type="text" id="clientName" name="clientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientEmail">Email <span class="required">*</span></label>
+                        <input type="email" id="clientEmail" name="clientEmail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="clientPhone">Phone <span class="required">*</span></label>
+                        <input type="tel" id="clientPhone" name="clientPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientCompany">Company</label>
+                        <input type="text" id="clientCompany" name="clientCompany">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meetingPreference">Meeting Preference</label>
+                    <select id="meetingPreference" name="meetingPreference">
+                        <option value="">Select preference</option>
+                        <option value="zoom">Zoom</option>
+                        <option value="google-meet">Google Meet</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="start-project-trust-section">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">Why Work With Helix-Zain</h2>
+            <div class="trust-features-grid reveal">
+                <div class="trust-feature-item">
+                    <img src="assets/security-icon.png" alt="Security" class="trust-feature-icon">
+                    <h3>Certified Ethical Hackers (CEH)</h3>
+                    <p>Our team holds industry-leading security certifications</p>
+                </div>
+                <div class="trust-feature-item">
+                    <img src="assets/globe-icon.png" alt="Global" class="trust-feature-icon">
+                    <h3>Trusted by clients in 7+ countries</h3>
+                    <p>Global reach with local expertise</p>
+                </div>
+                <div class="trust-feature-item">
+                    <img src="assets/success-icon.png" alt="Success" class="trust-feature-icon">
+                    <h3>40+ successful projects delivered</h3>
+                    <p>Proven track record of excellence</p>
+                </div>
+                <div class="trust-feature-item">
+                    <img src="assets/lock-icon.png" alt="Security Lock" class="trust-feature-icon">
+                    <h3>NDA & Security guaranteed</h3>
+                    <p>Your data and ideas are protected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel Section -->
+    <section class="start-project-testimonials-section">
+        <div class="container">
+            <div class="testimonial-carousel-wrapper reveal">
+                <div class="testimonial-carousel" id="testimonialCarousel">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Helix-Zain transformed our security infrastructure. Their expertise
+                            and attention to detail is unmatched."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-initial">RK</div>
+                            <div class="testimonial-author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>CTO, TechCorp India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The team delivered our mobile app ahead of schedule. Professional,
+                            reliable, and innovative."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-initial">SM</div>
+                            <div class="testimonial-author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>Founder, StartupHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Outstanding automation solutions that saved us 40% in operational
+                            costs. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-initial">AJ</div>
+                            <div class="testimonial-author-info">
+                                <h4>Alex Johnson</h4>
+                                <p>Operations Director, GlobalTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-carousel-controls">
+                    <button class="carousel-prev" id="carouselPrev">‹</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" data-slide="0"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="2"></span>
+                    </div>
+                    <button class="carousel-next" id="carouselNext">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="start-project-faq-section">
+        <div class="container">
+            <h2 class="start-project-section-title reveal">Frequently Asked Questions</h2>
+            <div class="start-project-faq-container reveal">
+                <div class="start-project-faq-item">
+                    <div class="start-project-faq-question">
+                        <h3>How long does a project take?</h3>
+                        <span class="start-project-faq-toggle">+</span>
+                    </div>
+                    <div class="start-project-faq-answer">
+                        <p>Project timelines vary based on scope and complexity. A simple website can take 2-4 weeks,
+                            while complex applications may take 2-6 months. We'll provide a detailed timeline after
+                            reviewing your requirements.</p>
+                    </div>
+                </div>
+                <div class="start-project-faq-item">
+                    <div class="start-project-faq-question">
+                        <h3>What does a security audit include?</h3>
+                        <span class="start-project-faq-toggle">+</span>
+                    </div>
+                    <div class="start-project-faq-answer">
+                        <p>Our security audits include comprehensive vulnerability assessments, penetration testing,
+                            security posture evaluation, detailed recommendations report, and a consultant call to
+                            discuss findings.</p>
+                    </div>
+                </div>
+                <div class="start-project-faq-item">
+                    <div class="start-project-faq-question">
+                        <h3>Do you sign NDA?</h3>
+                        <span class="start-project-faq-toggle">+</span>
+                    </div>
+                    <div class="start-project-faq-answer">
+                        <p>Yes, absolutely. We take confidentiality seriously and are happy to sign NDAs before
+                            discussing your project details. Your ideas and data are always protected.</p>
+                    </div>
+                </div>
+                <div class="start-project-faq-item">
+                    <div class="start-project-faq-question">
+                        <h3>What do you need from us to start?</h3>
+                        <span class="start-project-faq-toggle">+</span>
+                    </div>
+                    <div class="start-project-faq-answer">
+                        <p>To get started, we need a clear understanding of your project goals, any existing
+                            documentation or designs, access credentials (if applicable), and your preferred timeline.
+                            We'll guide you through the process.</p>
+                    </div>
+                </div>
+                <div class="start-project-faq-item">
+                    <div class="start-project-faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <span class="start-project-faq-toggle">+</span>
+                    </div>
+                    <div class="start-project-faq-answer">
+                        <p>We accept bank transfers, UPI, and major credit cards. Payment terms are typically structured
+                            as milestones, with an initial deposit to begin work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="start-project-cta-section">
+        <div class="hologram-ring"></div>
+        <div class="container">
+            <div class="start-project-cta-content reveal">
+                <h2>Ready to build something extraordinary?</h2>
+                <div class="start-project-cta-buttons">
+                    <button type="button" class="start-project-submit-btn" id="submitProjectBtn">Submit Project
+                        Request</button>
+                    <a href="https://wa.me/1234567890" target="_blank" class="cta-secondary">WhatsApp / Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success State Overlay -->
+    <div class="start-project-success-overlay" id="successOverlay">
+        <div class="start-project-success-content">
+            <div class="start-project-success-icon">🎉</div>
+            <h2>Project Request Submitted Successfully</h2>
+            <p>Thank you! Our team will contact you within 24 hours.</p>
+            <div class="start-project-success-buttons">
+                <button class="start-project-success-btn-primary" id="addToCalendarBtn">Add to Calendar</button>
+                <button class="start-project-success-btn-outline" id="downloadChecklistBtn">Download Pre-Project
+                    Checklist</button>
+                <a href="index.html" class="start-project-success-btn-link">Return Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Helix-Zain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/custom-dropdown.js"></script>
+    <script>
+        // Create particles
+        const particlesContainer = document.getElementById('particles');
+        if (particlesContainer) {
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+
+        // Set active nav item based on current page
+        function setActiveNavItem() {
+            const pathname = window.location.pathname;
+            const currentPath = pathname.split('/').pop() || '';
+
+            // Handle root path
+            const isRoot = pathname === '/' || currentPath === '' || currentPath === 'index.html';
+
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+
+                // Remove .html extension for comparison
+                const hrefPath = href.replace('.html', '');
+                const currentPathClean = currentPath.replace('.html', '');
+
+                // Check if this link matches current page
+                if (isRoot && (href === 'index.html' || href === '/' || hrefPath === '')) {
+                    link.classList.add('active');
+                } else if (!isRoot && (hrefPath === currentPathClean || href === currentPath)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Run on page load
+        setActiveNavItem();
+
+        // FAQ Toggle for start-project page
+        document.querySelectorAll('.start-project-faq-question').forEach(question => {
+            question.addEventListener('click', function () {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.start-project-faq-item').forEach(faq => faq.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Project type selection
+        document.querySelectorAll('.project-type-card').forEach(card => {
+            card.addEventListener('click', function () {
+                document.querySelectorAll('.project-type-card').forEach(c => c.classList.remove('selected'));
+                this.classList.add('selected');
+                const projectType = this.getAttribute('data-type');
+                document.getElementById('selectedProjectType').value = projectType;
+
+                if (projectType === 'other') {
+                    document.getElementById('otherProjectInput').style.display = 'block';
+                } else {
+                    document.getElementById('otherProjectInput').style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
