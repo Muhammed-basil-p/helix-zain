@@ -997,4 +997,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (submitBtn) {
         // Already handled above
     }
+
+    // Services grid: click card (outside links) to open unified request form with service pre-selected
+    document.querySelectorAll('.service-category-card[data-request-service]').forEach((card) => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('a, button, .coming-soon-badge')) return;
+            const key = card.getAttribute('data-request-service');
+            if (key) window.location.href = `request-service.html?service=${encodeURIComponent(key)}`;
+        });
+    });
 });
