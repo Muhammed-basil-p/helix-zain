@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details | Helix-Zain</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="description" content="Explore Helix-Zain service packages—premium web and app development with clear pricing and a simple request flow.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="service-package-detail-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="HELIX-ZAIN — Home">
+                <img src="assets/logo.png" alt="" width="260" height="80" decoding="async" aria-hidden="true">
+                <span class="nav-logo-text">Helix-Zain</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="spd-main">
+        <div class="spd-ambient" aria-hidden="true"></div>
+
+        <div class="container spd-container">
+            <a href="services.html" class="spd-back-link spd-reveal">
+                <span class="spd-back-link__arrow" aria-hidden="true">←</span>
+                Back to packages
+            </a>
+
+            <!-- 1. Package overview -->
+            <section class="spd-overview spd-reveal" aria-labelledby="spd-package-title">
+                <div class="spd-glass spd-overview__inner">
+                    <p class="spd-kicker">Selected package</p>
+                    <h1 id="spd-package-title" class="spd-package-title">Growth Package</h1>
+                    <p class="spd-price" id="spd-price" aria-live="polite">2,289 <span class="spd-price__currency">SAR</span></p>
+                    <p class="spd-tagline" id="spd-tagline">Built to grow your business online</p>
+                    <ul class="spd-feature-list" id="spd-feature-list" aria-label="Included in this package">
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>Advanced Website or App Development</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>UI/UX Design Enhancement</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>SEO Optimization</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>Branding Support</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>Security Ensurement</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>Hosting + Maintenance</span></li>
+                        <li><span class="spd-feature-icon" aria-hidden="true"></span><span>3 Months Support</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="spd-security spd-reveal" id="spd-security-section" aria-labelledby="spd-security-title" hidden>
+                <div class="spd-glass spd-security__panel">
+                    <p class="spd-kicker">Enterprise protection suite</p>
+                    <h2 class="spd-section-title spd-security__title" id="spd-security-title">Advanced Security &amp; Protection System</h2>
+                    <p class="spd-security__subtitle" id="spd-security-subtitle">Multi-layer protection designed for modern business websites</p>
+
+                    <div class="spd-security-grid" id="spd-security-grid" aria-label="Security categories and protections">
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🛡️</span></span> Authentication &amp; User Security</h3>
+                            <ul>
+                                <li>User signup/login system</li>
+                                <li>Password hashing (bcrypt / argon2)</li>
+                                <li>JWT authentication and session-based auth</li>
+                                <li>Password reset + email verification</li>
+                                <li>Login attempt limits (basic protection)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔐</span></span> Authorization (Access Control)</h3>
+                            <ul>
+                                <li>Role-Based Access Control (RBAC)</li>
+                                <li>Admin/user/guest permissions</li>
+                                <li>Route protection middleware</li>
+                                <li>API access restriction</li>
+                                <li>Feature-based access control</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🚫</span></span> Input Security</h3>
+                            <ul>
+                                <li>Input validation (forms and APIs)</li>
+                                <li>Data sanitization</li>
+                                <li>XSS protection logic</li>
+                                <li>SQL injection prevention (parameterized queries)</li>
+                                <li>File upload validation (type/size restrictions)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🧱</span></span> API Security Layer</h3>
+                            <ul>
+                                <li>Protected API routes</li>
+                                <li>API authentication middleware</li>
+                                <li>Request validation schemas (Zod/Joi)</li>
+                                <li>Rate limiting per endpoint</li>
+                                <li>Request size limits + API key protection</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">⛔</span></span> Rate Limiting &amp; Anti-Spam</h3>
+                            <ul>
+                                <li>Requests per IP limits</li>
+                                <li>Time-based throttling</li>
+                                <li>Temporary IP blocking</li>
+                                <li>CAPTCHA integration logic (backend side)</li>
+                                <li>Basic bot detection rules</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔒</span></span> Security Headers</h3>
+                            <ul>
+                                <li>Content Security Policy (CSP)</li>
+                                <li>HSTS (force HTTPS)</li>
+                                <li>X-Frame-Options</li>
+                                <li>X-Content-Type-Options</li>
+                                <li>Referrer &amp; Permissions Policy</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🧾</span></span> Logging &amp; Monitoring</h3>
+                            <ul>
+                                <li>Request logging (who accessed what)</li>
+                                <li>Error logging system</li>
+                                <li>Failed login tracking</li>
+                                <li>Suspicious activity logs</li>
+                                <li>Admin audit logs</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🚨</span></span> Intrusion / Abuse Detection</h3>
+                            <ul>
+                                <li>Detect repeated failed logins</li>
+                                <li>Detect unusual request spikes</li>
+                                <li>Detect IP anomalies</li>
+                                <li>Auto-block suspicious users (temporary bans)</li>
+                                <li>Alert system (email/log alerts)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🧠</span></span> Data Protection</h3>
+                            <ul>
+                                <li>Password hashing + salting</li>
+                                <li>Sensitive data encryption (AES)</li>
+                                <li>Secure token storage logic</li>
+                                <li>Masking sensitive output (emails, IDs)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🧼</span></span> Environment &amp; Secrets Security</h3>
+                            <ul>
+                                <li>Use <code>.env</code> files</li>
+                                <li>Hide API keys from frontend</li>
+                                <li>Validate environment variables</li>
+                                <li>Prevent secret leakage in logs</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">📦</span></span> Dependency Security</h3>
+                            <ul>
+                                <li>Detect vulnerable packages</li>
+                                <li>Suggest safe versions</li>
+                                <li>Remove risky libraries</li>
+                                <li>Upgrade dependencies safely</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🧪</span></span> Basic Security Testing</h3>
+                            <ul>
+                                <li>Simulated attack cases</li>
+                                <li>Input fuzz testing logic</li>
+                                <li>Vulnerability checks in code</li>
+                                <li>Security misconfiguration detection</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">📁</span></span> File &amp; Upload Security</h3>
+                            <ul>
+                                <li>File type validation</li>
+                                <li>File size limits</li>
+                                <li>Malware-risk file blocking logic</li>
+                                <li>Secure storage paths</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔁</span></span> Session Security</h3>
+                            <ul>
+                                <li>Secure cookies (HttpOnly, Secure, SameSite)</li>
+                                <li>Session timeout handling</li>
+                                <li>Token refresh logic</li>
+                                <li>Logout invalidation</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🌐</span></span> Cloud-Based Protection Setup</h3>
+                            <ul>
+                                <li>Setup with Cloudflare</li>
+                                <li>DDoS protection enabled</li>
+                                <li>Basic Web Application Firewall (WAF)</li>
+                                <li>Bot and spam traffic filtering</li>
+                                <li>Secure HTTPS enforcement (SSL)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🛡️</span></span> Website Protection Layer</h3>
+                            <ul>
+                                <li>Protection against common web attacks</li>
+                                <li>Secure request filtering setup</li>
+                                <li>Blocking suspicious traffic patterns</li>
+                                <li>Basic abuse prevention system</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔐</span></span> Secure Authentication System</h3>
+                            <ul>
+                                <li>Secure login/signup system</li>
+                                <li>Password encryption (hashed storage)</li>
+                                <li>Login attempt protection</li>
+                                <li>Session security setup</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🚫</span></span> Anti-Spam Protection</h3>
+                            <ul>
+                                <li>Form spam protection system</li>
+                                <li>Bot detection on contact forms</li>
+                                <li>Request throttling (anti-flood protection)</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔑</span></span> Secure Hosting Configuration</h3>
+                            <ul>
+                                <li>Firewall setup (only required ports open)</li>
+                                <li>Secure server configuration</li>
+                                <li>SSH access protection (key-based login)</li>
+                                <li>Basic server hardening</li>
+                            </ul>
+                        </article>
+
+                        <article class="spd-security-card">
+                            <h3><span class="spd-security-icon" aria-hidden="true"><span class="spd-security-icon-emoji">🔒</span></span> HTTPS &amp; Secure Connection Setup</h3>
+                            <ul>
+                                <li>SSL certificate installation</li>
+                                <li>Force HTTPS redirect</li>
+                                <li>Secure data transmission setup</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Trust -->
+            <section class="spd-trust spd-reveal" aria-label="Trust indicators">
+                <div class="spd-trust-inner spd-glass">
+                    <div class="spd-trust-item">
+                        <span class="spd-trust-dot" aria-hidden="true"></span>
+                        <span>Secure process</span>
+                    </div>
+                    <div class="spd-trust-item">
+                        <span class="spd-trust-dot" aria-hidden="true"></span>
+                        <span>Professional handling</span>
+                    </div>
+                    <div class="spd-trust-item">
+                        <span class="spd-trust-dot" aria-hidden="true"></span>
+                        <span>Fast response within 24 hours</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Form -->
+            <section class="spd-form-section spd-reveal" aria-labelledby="spd-form-heading">
+                <div class="spd-glass spd-form-panel">
+                    <h2 id="spd-form-heading" class="spd-section-title spd-section-title--form">Request this package</h2>
+                    <p class="spd-form-lead">Share a few details—we will follow up with next steps.</p>
+                    <form class="spd-form" id="spdPackageForm" novalidate>
+                        <input type="hidden" name="packageId" id="spd-package-id" value="growth">
+                        <div class="spd-field">
+                            <label for="spd-name">Name</label>
+                            <input type="text" id="spd-name" name="name" autocomplete="name" required placeholder="Your name">
+                        </div>
+                        <div class="spd-field">
+                            <label for="spd-email">Email</label>
+                            <input type="email" id="spd-email" name="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="spd-field">
+                            <label for="spd-phone">Contact number</label>
+                            <input type="tel" id="spd-phone" name="phone" autocomplete="tel" inputmode="tel" required placeholder="+966 …">
+                        </div>
+                        <div class="spd-field">
+                            <label for="spd-description">Project description</label>
+                            <textarea id="spd-description" name="description" rows="5" required minlength="10" placeholder="Goals, timeline, and anything we should know (at least 10 characters)."></textarea>
+                        </div>
+                        <div class="spd-form-actions">
+                            <button type="submit" class="spd-submit-btn">Request This Package</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 5. Success popup -->
+    <div class="spd-success-overlay" id="spdSuccessOverlay" role="presentation" aria-hidden="true">
+        <div class="spd-success-backdrop" id="spdSuccessBackdrop" tabindex="-1"></div>
+        <div class="spd-success-dialog spd-glass" role="dialog" aria-modal="true" aria-labelledby="spdSuccessTitle" aria-describedby="spdSuccessMessage">
+            <h2 id="spdSuccessTitle" class="spd-success-title">Request Received</h2>
+            <p id="spdSuccessMessage" class="spd-success-message">Our team will contact you within 24 hours.</p>
+            <button type="button" class="spd-success-close" id="spdSuccessClose">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer spd-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">© 2026 Helix-Zain. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="footer-separator">•</span>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/service-package-detail.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            });
+        });
+    </script>
+</body>
+</html>

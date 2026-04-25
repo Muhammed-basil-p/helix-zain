@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix-Zain</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="description" content="Request App Development, Web Development, or Automation &amp; AI services from Helix-Zain. Quick form—tell us what you need.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="glassy-consultation request-service-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="HELIX-ZAIN — Home">
+                <img src="assets/logo.png" alt="" width="260" height="80" decoding="async" aria-hidden="true">
+                <span class="nav-logo-text">Helix-Zain</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-section request-service-section">
+        <div class="container">
+            <div class="consultation-form-wrapper request-service-layout">
+                <form class="consultation-form request-service-form" id="requestServiceForm" data-request-service-form novalidate>
+                    <input type="hidden" name="serviceKey" value="" data-service-key>
+
+                    <div class="request-service-selected" data-selected-service-row hidden>
+                        <span class="request-service-selected-label">Selected Service:</span>
+                        <span class="request-service-selected-value" data-selected-service-name></span>
+                    </div>
+
+                    <div class="form-section request-service-fields">
+                        <div class="form-group">
+                            <label for="req-email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="req-email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="req-phone">Contact Number <span class="required">*</span></label>
+                            <input type="tel" id="req-phone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="+1 234 567 8900">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="req-description">Brief Project Description <span class="required">*</span></label>
+                            <textarea id="req-description" name="description" rows="5" required minlength="10" placeholder="Describe your goals and what you need (at least 10 characters)."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="request-service-feedback" data-request-feedback hidden role="status" aria-live="polite"></div>
+
+                    <div class="form-submit-wrapper">
+                        <button type="submit" class="submit-btn" data-submit-request>Send Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">© 2026 Helix-Zain. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="footer-separator">•</span>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Request Service Success Popup -->
+    <div class="consultation-success-overlay" id="requestSuccessOverlay" aria-hidden="true">
+        <div class="consultation-success-content" role="dialog" aria-modal="true" aria-labelledby="requestSuccessTitle">
+            <div class="success-icon">✓</div>
+            <h2 id="requestSuccessTitle">Request received</h2>
+            <p>Thank you for your request. We will review your details and get back to you shortly.</p>
+            <button type="button" class="success-close-btn" data-close-request-success>Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/request-service-form.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            });
+        });
+    </script>
+</body>
+</html>

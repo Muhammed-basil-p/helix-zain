@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix-Zain</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="description" content="Contact Helix-Zain for tech support for small business, website security services, and cybersecurity for SMEs. Global support—get a free consultation today.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Premium Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="HELIX-ZAIN — Home">
+                <img src="assets/logo.png" alt="" width="260" height="80" decoding="async" aria-hidden="true">
+                <span class="nav-logo-text">Helix-Zain</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="particles-bg" id="particles"></div>
+        <div class="scanlines"></div>
+        <div class="container">
+            <h1 class="fade-in-up">Let's Secure Your Business</h1>
+            <p class="page-subtitle fade-in-up">Have a problem or want to protect your business? We're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-up">
+                    <h2>Contact Information</h2>
+                    <p>Reach out for tech support, website security, or a free consultation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:basilbasheermuhammad@gmail.com">basilbasheermuhammad@gmail.com</a></p>
+                        </div>
+                        <div style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 194, 255, 0.3), transparent); margin: 1rem 0;"></div>
+                        <div class="contact-item">
+                            <h3>🌍 Global support</h3>
+                            <p>We support small and medium businesses worldwide—fast response and clear communication.</p>
+                        </div>
+                        <div style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 194, 255, 0.3), transparent); margin: 1rem 0;"></div>
+                        <div class="contact-item">
+                            <h3>📱 Phone</h3>
+                            <p>+91 75106 69304</p>
+                        </div>
+                        <div style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0, 194, 255, 0.3), transparent); margin: 1rem 0;"></div>
+                        <div class="contact-item">
+                            <h3>🕐 Office Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in-up">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="businessName">Business name *</label>
+                            <input type="text" id="businessName" name="businessName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceNeeded">Service needed *</label>
+                            <input type="text" id="serviceNeeded" name="serviceNeeded" placeholder="e.g. Tech support, security audit, new website" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get a Free Consultation Today</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">© 2026 Helix-Zain. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="footer-separator">•</span>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Create particles
+        const particlesContainer = document.getElementById('particles');
+        if (particlesContainer) {
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+
+        // Set active nav item based on current page
+        function setActiveNavItem() {
+            const pathname = window.location.pathname;
+            const currentPath = pathname.split('/').pop() || '';
+            
+            // Handle root path
+            const isRoot = pathname === '/' || currentPath === '' || currentPath === 'index.html';
+            
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                
+                // Remove .html extension for comparison
+                const hrefPath = href.replace('.html', '');
+                const currentPathClean = currentPath.replace('.html', '');
+                
+                // Check if this link matches current page
+                if (isRoot && (href === 'index.html' || href === '/' || hrefPath === '')) {
+                    link.classList.add('active');
+                } else if (!isRoot && (hrefPath === currentPathClean || href === currentPath)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Run on page load
+        setActiveNavItem();
+    </script>
+</body>
+</html>
