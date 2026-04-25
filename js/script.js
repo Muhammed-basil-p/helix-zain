@@ -291,7 +291,7 @@ window.addEventListener('scroll', () => {
 
 // Google Sheets Integration
 // After deploying google-apps-script.js as a web app, paste your URL here:
-const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwMjd0CZFpcn_j-YS45HVylfM_Qp2NrNeVn07T_ihTHLWENcS2lb_I7U9nD-g7Uz_9Acg/exec';
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbyc6v2SdnY3qEC6XafrByp9aEkpDjMGWb9RQpfTQKQauBFThsWO2NutMzq_QNSJboEp/exec';
 
 async function sendToGoogleSheets(data) {
     if (GOOGLE_SHEETS_URL === 'YOUR_APPS_SCRIPT_URL') return;
