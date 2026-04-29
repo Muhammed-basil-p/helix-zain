@@ -1,6 +1,10 @@
 (function () {
     'use strict';
 
+    // Replace with your deployed Google Apps Script Web App URL,
+    // or set window.GOOGLE_SHEETS_WEB_APP_URL in service-package-detail.html.
+    var GOOGLE_SHEETS_WEB_APP_URL = (window.GOOGLE_SHEETS_WEB_APP_URL || 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE').trim();
+
     var PACKAGES = {
         launch: {
             id: 'launch',
@@ -509,44 +513,50 @@
         var form = document.getElementById('spdPackageForm');
         if (!form) return;
         var overlay = document.getElementById('spdSuccessOverlay');
-        var submitBtn = form.querySelector('button[type="submit"]');
+        var submitButton = form.querySelector('button[type="submit"]');
 
-        form.addEventListener('submit', function (e) {
+        function setSubmitting(isSubmitting) {
+            if (!submitButton) return;
+            submitButton.disabled = isSubmitting;
+            submitButton.textContent = isSubmitting ? 'Submitting...' : 'Request This Package';
+        }
+
+        form.addEventListener('submit', async function (e) {
             e.preventDefault();
             if (!form.reportValidity()) return;
 
-            var payload = {
-                packageId: (document.getElementById('spd-package-id') || {}).value || getPackageKey(),
-                name: form.name.value.trim(),
-                email: form.email.value.trim(),
-                phone: form.phone.value.trim(),
-                description: form.description.value.trim()
-            };
-
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending…';
+            var submitEndpoint = GOOGLE_SHEETS_WEB_APP_URL;
+            if (!submitEndpoint || submitEndpoint.indexOf('https://') !== 0 || submitEndpoint.indexOf('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') !== -1) {
+                submitEndpoint = GOOGLE_SHEET_URL;
             }
 
-            fetch(GOOGLE_SHEET_URL, {
-                method: 'POST',
-                body: JSON.stringify(payload)
-            })
-            .then(function () {
-                if (overlay) openSuccessModal(overlay, submitBtn || document.activeElement);
+            if (!submitEndpoint || submitEndpoint.indexOf('https://') !== 0) {
+                window.alert('Google Sheets endpoint is not configured yet. Please add your Apps Script web app URL in js/service-package-detail.js.');
+                return;
+            }
+
+            var formData = new FormData(form);
+            formData.append('pageUrl', window.location.href);
+            formData.append('submittedAt', new Date().toISOString());
+
+            try {
+                setSubmitting(true);
+                await fetch(submitEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors'
+                });
+
+                if (overlay) openSuccessModal(overlay, document.activeElement);
                 form.reset();
                 var hiddenId = document.getElementById('spd-package-id');
                 if (hiddenId) hiddenId.value = getPackageKey();
-            })
-            .catch(function () {
-                alert('Something went wrong. Please try again or contact us directly.');
-            })
-            .finally(function () {
-                if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Request This Package';
-                }
-            });
+            } catch (error) {
+                console.error('Failed to submit package request to Google Sheets:', error);
+                window.alert('Could not submit your request right now. Please try again.');
+            } finally {
+                setSubmitting(false);
+            }
         });
     }
 

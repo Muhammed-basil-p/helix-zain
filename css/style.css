@@ -480,6 +480,13 @@ h4 {
     line-height: 1.6;
 }
 
+.home-hero-arabic-tagline {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
 .home-hero-buttons {
     display: flex;
     gap: 1.5rem;
