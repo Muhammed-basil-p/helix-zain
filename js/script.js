@@ -373,7 +373,7 @@ if (contactForm) {
             // Also send via EmailJS if configured
             if (isEmailJSConfigured) {
                 const templateParams = {
-                    to_email: 'basilbasheermuhammad@gmail.com',
+                    to_email: 'helixzainofficial@gmail.com',
                     from_name: name,
                     from_email: email,
                     business_name: businessName,

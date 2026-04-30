@@ -30,7 +30,7 @@
      ---
      Reply to: {{reply_to}}
      ```
-   - Set "To Email" to: `basilbasheermuhammad@gmail.com`
+   - Set "To Email" to: `helixzainofficial@gmail.com`
    - Note your **Template ID**
 
 4. **Get your Public Key**:
